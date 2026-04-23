@@ -1,0 +1,32 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recrutamento Tech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Cadastrar novo Candidato</h2>
+  <form id="formCandidato">
+    <input type="text" id="nome" placeholder="Nome do Candidato" required>
+    <input type="text" id="tecnologia" placeholder="Tecnologia (ex: Java, React)" required>
+    <input type="text" id="experiencia" placeholder="Experiência (ex: 2 anos, 5 anos)" required>
+    
+    <button type="submit">Salvar Candidato</button>
+  </form>  
+    
+  <hr>
+    
+  <h2>Painel de Ações</h2>
+  <button onclick="listarTodos()">Listar Candidatos (.map)</button>
+  <button onclick="filtrarSeniores()">Filtrar Seniores (+5 anos) (.filter)</button>
+  <button onclick="calcularMediaXP()">Média de Experiência (.reduce)</button>
+
+  <h3>Resultados:</h3>
+  <div id="resultado">Nenhum resultado ainda.</div>
+
+  <script src="app.js"></script>
+    
+</body>
+</html>
